@@ -203,7 +203,7 @@ main(int argc, char **argv)
         size_t f;
         for (f = 0; f < indata.features.cols; ++f) {
             size_t idx = k * num_fields + f;
-            printf(",%.5f", indata.features.scores[idx]);
+            printf(",%.6f", indata.features.scores[idx]);
         }
         printf("\n");
 
